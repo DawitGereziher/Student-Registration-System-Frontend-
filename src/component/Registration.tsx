@@ -15,8 +15,8 @@ const CourseRegistration = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const studentResponse = await axios.get('http://localhost:3000/api/users'); // Adjust endpoint as needed
-                const courseResponse = await axios.get('http://localhost:3000/api/courses'); // Adjust endpoint as needed
+                const studentResponse = await axios.get('https://student-registration-system-6zuf.onrender.com/api/users'); // Adjust endpoint as needed
+                const courseResponse = await axios.get('https://student-registration-system-6zuf.onrender.com/api/courses'); // Adjust endpoint as needed
 
                 setStudents(studentResponse.data);
                 setCourses(courseResponse.data);
@@ -36,7 +36,7 @@ const CourseRegistration = () => {
         setSuccess('');
 
         try {
-            const response = await axios.post('http://localhost:3000/api/registrations', {
+            const response = await axios.post('https://student-registration-system-6zuf.onrender.com/api/registrations', {
                 userId: selectedStudent,
                 courseId: selectedCourse,
             });

@@ -10,7 +10,7 @@ const UserForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/users', { name, email, password, role });
+      await axios.post('https://student-registration-system-6zuf.onrender.com/api/users', { name, email, password, role });
       alert('User created successfully!');
     } catch (err) {
       alert('Failed to create user.');

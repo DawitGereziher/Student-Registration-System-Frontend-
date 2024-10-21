@@ -13,11 +13,11 @@ const Search = () => {
 
         try {
             // Fetch users
-            const userResponse = await axios.get('http://localhost:3000/api/users');
+            const userResponse = await axios.get('https://student-registration-system-6zuf.onrender.com/api/users');
             const users = userResponse.data; // Axios automatically parses JSON
 
             // Fetch courses
-            const courseResponse = await axios.get('http://localhost:3000/api/courses');
+            const courseResponse = await axios.get('https://student-registration-system-6zuf.onrender.com/api/courses');
             const courses = courseResponse.data; // Axios automatically parses JSON
 
             // Combine both results

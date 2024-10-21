@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './login.css';
 
 const Login = ({ setToken }) => {
   const [email, setEmail] = useState('');
@@ -9,7 +10,7 @@ const Login = ({ setToken }) => {
     e.preventDefault();
     try {
 
-      const res = await axios.post('http://localhost:3000/api/login', { email, password });
+      const res = await axios.post('https://student-registration-system-6zuf.onrender.com/api/login', { email, password });
 
       const token = res.data.token;
       localStorage.setItem('token', token); 

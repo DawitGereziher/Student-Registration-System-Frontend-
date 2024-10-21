@@ -10,7 +10,7 @@ const CourseForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/courses', { title, description, credits, instructor });
+      await axios.post('https://student-registration-system-6zuf.onrender.com/api/courses', { title, description, credits, instructor });
       alert('Course created successfully!');
     } catch (err) {
       alert('Failed to create course.');
