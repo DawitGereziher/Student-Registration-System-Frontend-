@@ -31,4 +31,11 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
   }
+"scripts": {
+  "start": "react-scripts start",  // Runs in development mode
+  "build": "react-scripts build",   // Builds for production
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+}
+
 }
